@@ -1,8 +1,8 @@
-# Raycast macOS 简体中文设置补丁（2.9.0.0）
+# Raycast macOS 简体中文界面补丁（2.9.0.0）
 
 这是 [zwjtano/raycast-macos-zh-CN](https://github.com/zwjtano/raycast-macos-zh-CN) 的兼容 fork，当前适配 **Raycast 2.9.0.0 Apple Silicon（arm64）**。
 
-> 当前范围是**部分核心设置界面**，不是完整汉化。插件、更新日志正文、主搜索界面和原生菜单栏仍以英文为主。
+> 当前范围是主界面、设置、对话框和主要内置功能的固定文案，不是完整汉化。商店插件内部文案、远程内容、用户内容和原生菜单栏仍可能为英文。
 
 - Fork：<https://github.com/iamvicliu/raycast-macos-zh-CN>
 - 上游原理：替换 Raycast Electron 前端中的 JavaScript 资源字符串
@@ -12,21 +12,20 @@
 
 ## 当前覆盖范围
 
-已翻译以下 6 个前端资源中的固定界面文字：
+翻译表覆盖 214 个前端资源，生成 5,727 处字符串替换，包括：
 
-- 通用、外观、高级、关于设置页的标题与主要设置项
-- 设置搜索中的通用设置目录条目
-- 部分提示、按钮、更新状态和诊断状态文字
+- 主搜索、欢迎页、设置导航和主要设置页
+- 对话框、操作面板、空状态、错误提示和按钮
+- AI、笔记、剪贴板、窗口管理、听写等内置功能界面
+
+英文原文经 AST 提取，并与哈希核验过的 2.8.2 社区汉化按同文件、同字符串位置对齐后迁移；2.9.0 新增或变化的文案由本 fork 补充。构建器只替换通过 acorn 定位的字符串字面量和模板片段。
 
 不包含：
 
-- 商店插件和第三方扩展汉化
-- 更新日志正文汉化
-- 主搜索界面完整汉化
-- 原生菜单栏汉化
-- 动态服务端内容、登录后页面和未覆盖资源的完整翻译
-
-静态验证结果为 6 个资源、174 处字符串替换。该结果只证明生成和资源校验，不代表所有界面已逐页人工验收。
+- 商店插件和第三方扩展内部汉化
+- 远程更新日志正文、服务端动态内容和用户内容
+- 原生 macOS 菜单栏
+- 所有动态拼接文案和未命中界面的完整翻译
 
 ## 原理
 
@@ -36,7 +35,7 @@ Raycast 的 macOS 桌面界面位于：
 Raycast.app/Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/
 ```
 
-本项目只替换该目录下指定 JavaScript 文件中的字符串字面量：
+本项目只替换该目录下翻译表指定 JavaScript 文件中的字符串字面量：
 
 - 不修改 `Contents/MacOS/Raycast` 原生程序
 - 不重新签名
@@ -47,23 +46,43 @@ Raycast.app/Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resou
 
 ## 构建
 
+构建依赖 acorn；仓库只忽略 `.tools/node_modules/`，不会把依赖内容纳入版本控制。首次使用先安装：
+
+```bash
+cd .tools
+npm install
+cd ..
+```
+
 ```bash
 node tools/build-2.9.0.mjs --app /Applications/Raycast.app
 ```
 
-构建前请确认 `/Applications/Raycast.app` 是未打补丁的 `2.9.0.0 arm64` 原版。产物写入 `build/2.9.0.0/`：
+构建前请确认 `/Applications/Raycast.app` 是未打补丁的 `2.9.0.0 arm64` 原版。
+
+产物写入 `build/2.9.0.0/`：
 
 - `payload/`：替换后的前端资源
 - `manifest.tsv`：原文件与补丁文件哈希
 - `native-sha256.txt`：原生程序指纹
 - `build-report.json`：替换统计
 
-生成后会检查每个目标 JS 的模块语法：
+生成后可用 acorn 检查每个目标 JS 的模块语法：
 
 ```bash
-for file in build/2.9.0.0/payload/Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/*.js; do
-  node --input-type=module --check < "$file"
-done
+node - <<'NODE'
+import { readdir, readFile } from "node:fs/promises";
+import { parse } from "./.tools/node_modules/acorn/dist/acorn.mjs";
+const root = "build/2.9.0.0/payload/Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend";
+for (const file of await readdir(root)) {
+  if (!file.endsWith(".js")) continue;
+  parse(await readFile(`${root}/${file}`, "utf8"), {
+    ecmaVersion: "latest",
+    sourceType: "module",
+    allowHashBang: true,
+  });
+}
+NODE
 ```
 
 ## 安装与恢复
@@ -99,7 +118,7 @@ codesign --verify --deep --strict /Applications/Raycast.app
 本地验证应区分：
 
 1. 生成器完成、payload 哈希匹配
-2. 6 个补丁 JS 通过模块语法检查
+2. 214 个补丁 JS 全部通过 acorn 模块语法检查
 3. 临时副本上 `--check`、`--apply`、`--restore` 成功
 4. 恢复后原文件哈希和完整签名通过
 5. 实际启动并逐页查看中文界面

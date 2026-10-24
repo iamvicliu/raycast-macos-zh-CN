@@ -19,7 +19,7 @@ case "${MODE}" in
     if [ "${MODE}" = "--interactive-restore" ]; then
       echo '恢复原版：撤销汉化，保留用户设置和插件数据。'
     else
-      echo '安装汉化：仅替换核心设置界面的少量前端资源。'
+    echo '安装汉化：替换主界面、设置、对话框等前端资源中的可见文案。'
     fi
     echo '修改资源会使完整官方签名失效；本工具不会关闭系统安全保护，也不会重新签名。'
     echo '仅适用于指定版本。请先完全退出 Raycast。'
@@ -144,13 +144,35 @@ if [ "${MODE}" = "--restore" ]; then
 fi
 
 check_payload
-check_original
 
 if [ "${MODE}" = "--check" ]; then
-  count="$(/usr/bin/awk 'NF {count++} END {print count+0}' "${ASSET_ROOT}/manifest.tsv")"
-  echo "检查通过：版本、原生程序、${count} 个目标资源及补丁内容均匹配。尚未修改应用。"
+  original_count=0
+  patched_count=0
+  while IFS=$'\t' read -r old new rel; do
+    [ -n "${rel}" ] || continue
+    [ -f "${APP}/${rel}" ] && [ ! -L "${APP}/${rel}" ] \
+      || fail "目标资源缺失或为链接：${rel}"
+    actual="$(hash "${APP}/${rel}")"
+    if [ "${actual}" = "${old}" ]; then
+      original_count=$((original_count + 1))
+    elif [ "${actual}" = "${new}" ]; then
+      patched_count=$((patched_count + 1))
+    else
+      fail "目标资源不匹配：${rel}。可能已更新、损坏或安装了其他汉化。"
+    fi
+  done < "${ASSET_ROOT}/manifest.tsv"
+  count=$((original_count + patched_count))
+  if [ "${patched_count}" = 0 ]; then
+    echo "检查通过：版本、原生程序、${count} 个目标资源及补丁内容均匹配。当前为原版，尚未修改应用。"
+  elif [ "${original_count}" = 0 ]; then
+    echo "检查通过：版本、原生程序、${count} 个目标资源及补丁内容均匹配。当前已安装本补丁。"
+  else
+    fail "检测到混合状态：${original_count} 个原版资源、${patched_count} 个补丁资源。请恢复后重试。"
+  fi
   exit 0
 fi
+
+check_original
 
 [ ! -e "${BACKUP}" ] || fail "该路径已有备份，停止以免覆盖：${BACKUP}"
 [ -w "${APP}/Contents/Resources" ] || fail '当前账户无权修改此应用。'
