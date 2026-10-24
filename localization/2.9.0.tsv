@@ -1,0 +1,169 @@
+# file	source	target
+settings-window-DDvw7Jei.js	Follow System Appearance	跟随系统外观
+settings-window-DDvw7Jei.js	Dark Theme	深色主题
+settings-window-DDvw7Jei.js	Light Theme	浅色主题
+settings-window-DDvw7Jei.js	Theme Studio	主题工作室
+settings-window-DDvw7Jei.js	Edit or create themes for Raycast	编辑或创建 Raycast 主题
+settings-window-DDvw7Jei.js	Adjust the size of the Raycast interface	调整 Raycast 界面大小
+settings-window-DDvw7Jei.js	Interface Size	界面大小
+settings-window-DDvw7Jei.js	Choose your preferred mode when opening Raycast	选择打开 Raycast 时使用的模式
+settings-window-DDvw7Jei.js	Window Mode	窗口模式
+settings-window-DDvw7Jei.js	Show your favorites as icons in the compact window	在紧凑窗口中以图标显示收藏项
+settings-window-DDvw7Jei.js	Show Favorites in Compact Mode	在紧凑模式中显示收藏
+settings-window-DDvw7Jei.js	Open at Login	登录时启动
+settings-window-DDvw7Jei.js	Show In Menu Bar	在菜单栏中显示
+settings-window-DDvw7Jei.js	Automatically Show the Taskbar	自动显示任务栏
+settings-window-DDvw7Jei.js	Raycast Hotkey	Raycast 快捷键
+settings-window-DDvw7Jei.js	Configure appearance, startup behavior, and the Raycast hotkey.	配置外观、启动行为和 Raycast 快捷键。
+settings-window-DDvw7Jei.js	Manage organizations, members, and organization settings.	管理组织、成员和组织设置。
+settings-window-DDvw7Jei.js	Manage macOS System Settings commands.	管理 macOS 系统设置命令。
+settings-window-DDvw7Jei.js	Configure the Raycast Settings extension commands.	配置 Raycast 设置扩展的命令。
+settings-window-DDvw7Jei.js	Configure System Actions.	配置系统操作。
+settings-window-DDvw7Jei.js	Failed to update taskbar visibility behavior	无法更新任务栏可见性行为
+settings-window-DDvw7Jei.js	Failed to update taskbar behavior	无法更新任务栏行为
+settings-window-DDvw7Jei.js	Dark Themes	深色主题
+settings-window-DDvw7Jei.js	Light Themes	浅色主题
+settings-window-DDvw7Jei.js	Open Theme Studio	打开主题工作室
+settings-window-DDvw7Jei.js	Failed to fetch Spotlight hotkey status	无法获取聚焦搜索快捷键状态
+settings-window-DDvw7Jei.js	Failed to replace Spotlight hotkey	无法替换聚焦搜索快捷键
+settings-window-DDvw7Jei.js	Replace Spotlight	替代聚焦搜索
+settings-window-DDvw7Jei.js	Use Spotlight hotkey for Raycast	将聚焦搜索快捷键用于 Raycast
+settings-window-DDvw7Jei.js	Reset to default hotkey	恢复默认快捷键
+settings-window-DDvw7Jei.js	Theme Preview is active	主题预览已启用
+settings-window-DDvw7Jei.js	You cannot change these settings while previewing a theme	预览主题时无法更改这些设置
+settings-window-DDvw7Jei.js	Show ${u}	显示 ${u}
+settings-window-DDvw7Jei.js	Taskbar size	任务栏大小
+settings-window-DDvw7Jei.js	Configure background refresh for ${t.title}.	为 ${t.title} 配置后台刷新。
+settings-window-DDvw7Jei.js	Background Refresh	后台刷新
+settings-window-DDvw7Jei.js	Configure custom instructions for ${t.title}.	为 ${t.title} 配置自定义指令。
+settings-window-DDvw7Jei.js	Custom Instructions	自定义指令
+settings-window-DDvw7Jei.js	Keep the AI Chat window above other windows.	让 AI 对话窗口始终位于其他窗口上方。
+settings-window-DDvw7Jei.js	Always on Top	始终置顶
+settings-window-DDvw7Jei.js	Open Settings	打开设置
+settings-window-DDvw7Jei.js	No settings found	未找到设置
+settings-window-DDvw7Jei.js	Search settings	搜索设置
+settings-window-DDvw7Jei.js	Search settings…	搜索设置…
+settings-window-DDvw7Jei.js	Uninstall "${n}" extension	卸载“${n}”扩展
+settings-window-DDvw7Jei.js	Uninstall and Delete Settings	卸载并删除设置
+settings-window-DDvw7Jei.js	Uninstalling Extension…	正在卸载扩展…
+settings-window-DDvw7Jei.js	Extension uninstalled	扩展已卸载
+settings-window-DDvw7Jei.js	Could not uninstall extension	无法卸载扩展
+settings-window-DDvw7Jei.js	Uninstall but Keep Settings	卸载但保留设置
+settings-window-DDvw7Jei.js	Open in Store	在商店中打开
+settings-window-DDvw7Jei.js	Show Build in Finder	在访达中显示构建结果
+settings-window-DDvw7Jei.js	Could not show build output	无法显示构建输出
+settings-window-DDvw7Jei.js	Uninstall Extension	卸载扩展
+settings-window-DDvw7Jei.js	Not Signed In	未登录
+settings-window-DDvw7Jei.js	Your session has expired	登录已过期
+settings-window-DDvw7Jei.js	Raycast isn’t allowed in the menu bar	Raycast 未被允许显示在菜单栏
+settings-window-DDvw7Jei.js	Restart Raycast	重启 Raycast
+settings-window-DDvw7Jei.js	AI Usage	AI 用量
+settings-window-DDvw7Jei.js	Enabled Calendars	已启用的日历
+settings-window-DDvw7Jei.js	Auto Quit	自动退出
+settings-window-DDvw7Jei.js	AI Commands	AI 命令
+settings-window-DDvw7Jei.js	AI Extensions	AI 扩展
+settings-window-DDvw7Jei.js	Screen Awareness	屏幕感知
+settings-window-DDvw7Jei.js	Automation Examples	自动化示例
+settings-window-DDvw7Jei.js	Models & Providers	模型与提供商
+settings-window-DDvw7Jei.js	Windows Settings	窗口设置
+settings-window-DDvw7Jei.js	Synced Content	已同步内容
+settings-window-DDvw7Jei.js	Synced Devices	已同步设备
+settings-window-DDvw7Jei.js	Settings	设置
+settings-window-DDvw7Jei.js	Extensions	扩展
+settings-window-DDvw7Jei.js	General	通用
+settings-window-DDvw7Jei.js	Appearance	外观
+settings-window-DDvw7Jei.js	Advanced	高级
+settings-window-DDvw7Jei.js	Organization	组织
+settings-window-DDvw7Jei.js	Agents	智能体
+settings-window-DDvw7Jei.js	Projects	项目
+settings-window-DDvw7Jei.js	Commands	命令
+settings-window-DDvw7Jei.js	Skills	技能
+settings-window-DDvw7Jei.js	Automations	自动化
+settings-window-DDvw7Jei.js	Filters	筛选器
+settings-window-DDvw7Jei.js	Microphone	麦克风
+settings-window-DDvw7Jei.js	Personalization	个性化
+settings-window-DDvw7Jei.js	Widget	小组件
+advanced-settings-page-definition-CwGdhJgj.js	Choose whether Raycast brings windows to your current Space or switches to the Space where they are open.	选择 Raycast 是将窗口移到当前空间，还是切换到窗口所在的空间。
+advanced-settings-page-definition-CwGdhJgj.js	Window Activation Behavior	窗口激活行为
+advanced-settings-page-definition-CwGdhJgj.js	Select the provider used to fetch favicons or None to disable favicon fetching.	选择用于获取网站图标的提供商，选择“无”可停用网站图标获取。
+advanced-settings-page-definition-CwGdhJgj.js	Favicon Provider	网站图标提供商
+advanced-settings-page-definition-CwGdhJgj.js	Hide menu bar items to the left of a special status item when not hovering the menu bar.	未悬停菜单栏时，隐藏特殊状态项左侧的菜单栏项目。
+advanced-settings-page-definition-CwGdhJgj.js	Tidy Menu Bar	整理菜单栏
+advanced-settings-page-definition-CwGdhJgj.js	Open folders as new tabs in an existing File Explorer window instead of opening new windows.	在现有文件浏览器窗口中打开新标签页，而不是打开新窗口。
+advanced-settings-page-definition-CwGdhJgj.js	Open Folders in Tabs	在标签页中打开文件夹
+advanced-settings-page-definition-CwGdhJgj.js	Run the Accessibility Helper Elevated	以提升权限运行辅助功能助手
+advanced-settings-page-definition-CwGdhJgj.js	Diagnostics Services	诊断服务
+advanced-settings-page-definition-CwGdhJgj.js	Export Passphrase	导出密码
+advanced-settings-page-definition-CwGdhJgj.js	Automatically export your Raycast settings and data on a schedule.	按计划自动导出 Raycast 设置和数据。
+advanced-settings-page-definition-CwGdhJgj.js	Scheduled Backup	定时备份
+advanced-settings-page-definition-CwGdhJgj.js	Backup Location	备份位置
+advanced-settings-page-definition-CwGdhJgj.js	Automatically delete old backups to save disk space.	自动删除旧备份以节省磁盘空间。
+advanced-settings-page-definition-CwGdhJgj.js	Skip scheduled exports while on battery power and run them once back on AC power.	使用电池时跳过定时导出，恢复电源后补运行。
+advanced-settings-page-definition-CwGdhJgj.js	Skip on Battery	使用电池时跳过
+advanced-settings-page-definition-CwGdhJgj.js	Automatically use your computer's proxy configuration for network connections.	自动使用电脑的代理配置进行网络连接。
+advanced-settings-page-definition-CwGdhJgj.js	Use System Proxy Settings	使用系统代理设置
+advanced-settings-page-definition-CwGdhJgj.js	Choose a certificate file (.crt, .cer, .pem) to trust connections that would otherwise show security warnings or fail.	选择证书文件（.crt、.cer、.pem），以信任原本会出现安全警告或失败的连接。
+advanced-settings-page-definition-CwGdhJgj.js	Additional Certificate Authority	附加证书颁发机构
+advanced-settings-page-definition-CwGdhJgj.js	Tune advanced behavior, exporting, and connectivity.	调整高级行为、导出和连接设置。
+advanced-settings-view-Dq_TKBuz.js	Keep Latest	保留最新
+advanced-settings-view-Dq_TKBuz.js	Keep Last 5	保留最近 5 个
+advanced-settings-view-Dq_TKBuz.js	Keep Last 10	保留最近 10 个
+advanced-settings-view-Dq_TKBuz.js	A valid passphrase is required for scheduled export. Backups will be skipped.	定时导出需要有效密码，备份将被跳过。
+advanced-settings-view-Dq_TKBuz.js	A passphrase to encrypt your exported settings and data.	用于加密导出设置和数据的密码。
+advanced-settings-view-Dq_TKBuz.js	Passphrase must be at least 8 characters long.	密码长度至少为 8 个字符。
+advanced-settings-view-Dq_TKBuz.js	Failed to update Raycast core preferences	无法更新 Raycast 核心偏好设置
+advanced-settings-view-Dq_TKBuz.js	Scheduled Export	定时导出
+advanced-settings-view-Dq_TKBuz.js	Automatically back up your settings and data with Raycast Pro	使用 Raycast Pro 自动备份设置和数据
+advanced-settings-view-Dq_TKBuz.js	Last backup failed: ${b}	上次备份失败：${b}
+advanced-settings-view-Dq_TKBuz.js	Folder where scheduled backups are saved.	保存定时备份的文件夹。
+advanced-settings-view-Dq_TKBuz.js	Show in Finder	在访达中显示
+advanced-settings-view-Dq_TKBuz.js	Failed to update diagnostics service	无法更新诊断服务
+advanced-settings-view-Dq_TKBuz.js	Running the helper elevated requires an administrator account; on a standard account this setting has no effect.	以提升权限运行助手需要管理员账户；在标准账户上此设置不会生效。
+advanced-settings-view-Dq_TKBuz.js	The Raycast System Service is not running, so the helper is not actually elevated. Toggle this off and on again to reinstall it.	Raycast 系统服务未运行，因此助手并未真正提升权限。请关闭后再开启以重新安装。
+advanced-settings-view-Dq_TKBuz.js	The Raycast System Service is not running, so only limited debug information can be sent. Turn this off and on again to retry installation.	Raycast 系统服务未运行，因此只能发送有限的调试信息。请关闭后再开启以重试安装。
+advanced-settings-view-Dq_TKBuz.js	File Explorer	文件浏览器
+advanced-settings-view-Dq_TKBuz.js	Move to Active Space	移到当前空间
+advanced-settings-view-Dq_TKBuz.js	Switch Space	切换空间
+about-settings-view-BB41C99F.js	Delete "${J(e)}"?	删除“${J(e)}”？
+about-settings-view-BB41C99F.js	The chat is deleted permanently from this device and, through Cloud Sync, from your other devices. This can't be undone.	此聊天将从本设备永久删除，并通过云同步从其他设备删除。此操作无法撤销。
+about-settings-view-BB41C99F.js	Failed to delete an oversized chat from Diagnostics	无法从诊断中删除过大的聊天
+about-settings-view-BB41C99F.js	Could Not Delete Chat	无法删除聊天
+about-settings-view-BB41C99F.js	Please try again.	请重试。
+about-settings-view-BB41C99F.js	Open Chat	打开聊天
+about-settings-view-BB41C99F.js	Delete Chat	删除聊天
+about-settings-view-BB41C99F.js	1 more item is	另有 1 项
+about-settings-view-BB41C99F.js	${e.omittedCount} more items are	另有 ${e.omittedCount} 项
+about-settings-view-BB41C99F.js	 not listed.	未列出。
+about-settings-view-BB41C99F.js	Untitled Chat	无标题聊天
+about-settings-view-BB41C99F.js	${y(e.observedBytes)} (limit ${y(e.allowedBytes)})	${y(e.observedBytes)}（上限 ${y(e.allowedBytes)}）
+about-settings-view-BB41C99F.js	Deleted on this device; clears after the next sync	已在此设备删除；下次同步后清除
+about-settings-view-BB41C99F.js	In Recently Deleted	在“最近删除”中
+about-settings-view-BB41C99F.js	Open Setting	打开设置项
+about-settings-view-BB41C99F.js	Failed to execute diagnostic action	执行诊断操作失败
+about-settings-view-BB41C99F.js	All checks passed	所有检查通过
+about-settings-view-BB41C99F.js	unknown status	未知状态
+about-settings-view-BB41C99F.js	Failed to check for updates	检查更新失败
+about-settings-view-BB41C99F.js	Failed to install downloaded update	安装已下载的更新失败
+about-settings-view-BB41C99F.js	Check now	立即检查
+about-settings-view-BB41C99F.js	Up to date	已是最新版本
+about-settings-view-BB41C99F.js	Downloading	正在下载
+about-settings-view-BB41C99F.js	Update	更新
+about-settings-view-BB41C99F.js	Download failed	下载失败
+about-settings-view-BB41C99F.js	 2019-2026. All Rights Reserved.	 2019-2026。保留所有权利。
+about-settings-view-BB41C99F.js	Diagnostics	诊断
+about-settings-view-BB41C99F.js	Updates	更新
+about-settings-view-BB41C99F.js	Links	链接
+about-settings-view-BB41C99F.js	Other Socials	其他社交平台
+about-settings-page-definition-iVkC4ABw.js	Raycast Updates	Raycast 更新
+about-settings-page-definition-iVkC4ABw.js	Open Changelog	打开更新日志
+about-settings-page-definition-iVkC4ABw.js	Website	网站
+about-settings-page-definition-iVkC4ABw.js	Slack Community	Slack 社区
+about-settings-page-definition-iVkC4ABw.js	Send Feedback	发送反馈
+about-settings-page-definition-iVkC4ABw.js	Check for updates, view links, and open feedback destinations.	检查更新、查看链接并打开反馈入口。
+about-settings-page-definition-iVkC4ABw.js	About	关于
+use-cloud-sync-status-kind-C8wZA9Vk.js	General Settings	通用设置
+use-cloud-sync-status-kind-C8wZA9Vk.js	Open at Login	登录时启动
+use-cloud-sync-status-kind-C8wZA9Vk.js	Show In Menu Bar	在菜单栏中显示
+use-cloud-sync-status-kind-C8wZA9Vk.js	Appearance	外观
+use-cloud-sync-status-kind-C8wZA9Vk.js	Interface Size	界面大小
+use-cloud-sync-status-kind-C8wZA9Vk.js	Window Mode	窗口模式
